@@ -21,7 +21,7 @@ Es necesario un programa para dar solución a la falta de comunicación que se t
     
    - [ ] Rol comercial: podrá agregar y modificar los proveedores y clientes, realizar cotizaciones y sacar su respectivo informe.
    - [ ] Rol bodeguero: podrá agregar, modificar y borrar productos del inventario.
-   - [ ] Rol técnico: podrá monitorear y modificar los productos que saldrán a un evento.
+   - [ ] Rol técnico: podrá monitorear y modificar los productos que saldrán a un evento.c
    - [ ] Rol contable: podrá sacar informes de las cotizaciones y ganancias.
  
 ## Stakeholders secundarios.
@@ -33,8 +33,9 @@ Es necesario un programa para dar solución a la falta de comunicación que se t
 A continuación, se presentará el listado de los requerimientos funcionales y los requerimientos no funcionales de la aplicación. Siendo RF_x como requerimiento funcional_ número del requerimiento y RNF_x como requerimiento no funcional_ número del requerimiento.
 
 
-ID Requerimiento	Descripción	Prioridad
-RF_1	El sistema debe permitir un inicio de sesión con un usuario y contraseña ya establecido en el programa. Será conocido como super usuario.	Alta
+|ID Requerimiento|	Descripción |	Prioridad|
+| :------------ |:---------------:| -----:|
+|RF_1|	El sistema debe permitir un inicio de sesión con un usuario y contraseña ya establecido en el programa. Será conocido como super usuario.	|Alta|
 RF_2	El sistema debe permitir al super usuario crear otro usuario.	Alta
 RF_3	El sistema debe permitir al super usuario modificar otro usuario.	Alta
 RF_4	El sistema debe permitir al super usuario borrar otro usuario.	Alta
