@@ -1,2 +1,2 @@
-# lenguaje-de-programacion-2
-segundo semestre
+# lenguaje-de-programacion
+
