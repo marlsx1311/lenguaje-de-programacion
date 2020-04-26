@@ -34,17 +34,17 @@ A continuación, se presentará el listado de los requerimientos funcionales y l
 
 
 |ID Requerimiento|	Descripción |	Prioridad|
-| :------------ |:---------------:| -----:|
+| :--------- |:---------------:| -----:|
 |RF_1|	El sistema debe permitir un inicio de sesión con un usuario y contraseña ya establecido en el programa. Será conocido como super usuario.	|Alta|
-RF_2	El sistema debe permitir al super usuario crear otro usuario.	Alta
-RF_3	El sistema debe permitir al super usuario modificar otro usuario.	Alta
-RF_4	El sistema debe permitir al super usuario borrar otro usuario.	Alta
-RF_5	El sistema debe permitir que el super usuario otorgue o modifique los permisos a los otros usuarios.	Alta
-RF_6	El sistema debe permitir a cualquier usuario incluyendo el super usuario cerrar la sesión.	Alta
-RF_7	El sistema deberá permitir que un usuario anteriormente creado inicie sección.	Alta
-RF_8	El sistema deberá generar un cambio de contraseña cuando sea la primera vez que inicie sección.	Alta
-RNF_1	El sistema tendrá una interfaz gráfica desarrollada en JAVA	Alta
-RNF_2	El sistema tendrá portabilidad para diferentes computadores.	Alta
-RNF_4	El sistema almacenara los datos en la nube para su funcionamiento en los computadores que están instalados.	Alta
-RNF_6	El sistema tendrá concurrencia entre los usuarios.	Alta
+|RF_2|	El sistema debe permitir al super usuario crear otro usuario.	|Alta|
+|RF_3|	El sistema debe permitir al super usuario modificar otro usuario.	|Alta|
+|RF_4|	El sistema debe permitir al super usuario borrar otro usuario.	|Alta|
+|RF_5|	El sistema debe permitir que el super usuario otorgue o modifique los permisos a los otros usuarios.	|Alta|
+|RF_6|	El sistema debe permitir a cualquier usuario incluyendo el super usuario cerrar la sesión.	|Alta|
+|RF_7|	El sistema deberá permitir que un usuario anteriormente creado inicie sección.	|Alta
+|RF_8|	El sistema deberá generar un cambio de contraseña cuando sea la primera vez que inicie sección.|	Alta|
+|RNF_1|	El sistema tendrá una interfaz gráfica desarrollada en JAVA	|Alta|
+|RNF_2|	El sistema tendrá portabilidad para diferentes computadores.	|Alta|
+|RNF_4|	El sistema almacenara los datos en la nube para su funcionamiento en los computadores que están instalados.|	Alta|
+|RNF_6|	El sistema tendrá concurrencia entre los usuarios.	|Alta|
 
