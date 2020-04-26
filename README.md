@@ -17,15 +17,15 @@ Es necesario un programa para dar solución a la falta de comunicación que se t
 - Usuario admin: tendrá el acceso total a todas las pestañas del programa, podrá crear, modificar y borrar los usuarios, agregar, modificar y borrar los productos del inventario, agregar y modificar los proveedores y clientes, monitorear, modificar y sacar un informe de los productos que saldrán a un evento, realizar las cotizaciones, revisar y sacar informes de inventario, cotizaciones y ganancias.
 - Usuario super usuario: vendrá establecido por el sistema tendrá todos los accesos y no puede ser borrado por ningún usuario, solo puede haber uno en el sistema.
 - Usuario con roles, se encargarán de diferentes secciones en el funcionamiento del programa siendo los roles los siguientes:
-** Rol comercial: podrá agregar y modificar los proveedores y clientes, realizar cotizaciones y sacar su respectivo informe.
-** Rol bodeguero: podrá agregar, modificar y borrar productos del inventario.
-** Rol técnico: podrá monitorear y modificar los productos que saldrán a un evento.
-** Rol contable: podrá sacar informes de las cotizaciones y ganancias.
+**Rol comercial: podrá agregar y modificar los proveedores y clientes, realizar cotizaciones y sacar su respectivo informe.
+**Rol bodeguero: podrá agregar, modificar y borrar productos del inventario.
+**Rol técnico: podrá monitorear y modificar los productos que saldrán a un evento.
+**Rol contable: podrá sacar informes de las cotizaciones y ganancias.
 ## Stakeholders secundarios.
-** Proveedores.
-** Clientes.
-** Seguridad en eventos.
-** Aseguradoras.
+**Proveedores.
+**Clientes.
+**Seguridad en eventos.
+**Aseguradoras.
 ## Requerimientos.
 A continuación, se presentará el listado de los requerimientos funcionales y los requerimientos no funcionales de la aplicación. Siendo RF_x como requerimiento funcional_ número del requerimiento y RNF_x como requerimiento no funcional_ número del requerimiento.
 
