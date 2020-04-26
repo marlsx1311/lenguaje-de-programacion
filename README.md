@@ -25,10 +25,10 @@ Es necesario un programa para dar solución a la falta de comunicación que se t
    - [ ] Rol contable: podrá sacar informes de las cotizaciones y ganancias.
  
 ## Stakeholders secundarios.
-** Proveedores.
-** Clientes.
-** Seguridad en eventos.
-** Aseguradoras.
+- [ ] Proveedores.
+- [ ] Clientes.
+- [ ] Seguridad en eventos.
+- [ ] Aseguradoras.
 ## Requerimientos.
 A continuación, se presentará el listado de los requerimientos funcionales y los requerimientos no funcionales de la aplicación. Siendo RF_x como requerimiento funcional_ número del requerimiento y RNF_x como requerimiento no funcional_ número del requerimiento.
 
