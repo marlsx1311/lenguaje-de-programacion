@@ -13,19 +13,16 @@ El principal problema es la falta de organización de los procesos que tiene una
 Es necesario un programa para dar solución a la falta de comunicación que se tienen entre las áreas y los diferentes cargos de la empresa donde todos los participantes tengan conocimiento oportuno y un control exacto de las ordenes creadas, así como de la logística necesarias para llevar a cabo su realización en los tiempos establecidos. Esta solución propuesta podría tener un gran impacto en la organización empresarial del sector audiovisual teniendo en cuenta que se les proporcionaría a los empleados una plataforma donde desempeñar sus funciones más organizadamente dándoles la oportunidad de minimizar errores, pero también ser más eficientes con los tiempos propuestos.
 
 # Stakeholders.
-## Stakeholders primarios.
-- Usuario admin: tendrá el acceso total a todas las pestañas del programa, podrá crear, modificar y borrar los usuarios, agregar, modificar y borrar los productos del inventario, agregar y modificar los proveedores y clientes, monitorear, modificar y sacar un informe de los productos que saldrán a un evento, realizar las cotizaciones, revisar y sacar informes de inventario, cotizaciones y ganancias.
+## Stakeholders primarios
 
+- Usuario admin: tendrá el acceso total a todas las pestañas del programa, podrá crear, modificar y borrar los usuarios, agregar, modificar y borrar los productos del inventario, agregar y modificar los proveedores y clientes, monitorear, modificar y sacar un informe de los productos que saldrán a un evento, realizar las cotizaciones, revisar y sacar informes de inventario, cotizaciones y ganancias.
 - Usuario super usuario: vendrá establecido por el sistema tendrá todos los accesos y no puede ser borrado por ningún usuario, solo puede haber uno en el sistema.
 - Usuario con roles, se encargarán de diferentes secciones en el funcionamiento del programa siendo los roles los siguientes:
 
- + Rol comercial: podrá agregar y modificar los proveedores y clientes, realizar cotizaciones y sacar su respectivo informe.
- 
- + Rol bodeguero: podrá agregar, modificar y borrar productos del inventario.
- 
- + Rol técnico: podrá monitorear y modificar los productos que saldrán a un evento.
- 
- + Rol contable: podrá sacar informes de las cotizaciones y ganancias.
+Rol comercial: podrá agregar y modificar los proveedores y clientes, realizar cotizaciones y sacar su respectivo informe.
+Rol bodeguero: podrá agregar, modificar y borrar productos del inventario.
+Rol técnico: podrá monitorear y modificar los productos que saldrán a un evento.
+Rol contable: podrá sacar informes de las cotizaciones y ganancias.
  
 ## Stakeholders secundarios.
 **Proveedores.
