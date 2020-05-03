@@ -5,17 +5,26 @@
  */
 package Vista;
 
-/**
- *
- * @author Marlon
- */
+import java.awt.Image;
+import java.awt.Toolkit;
+import javax.swing.JPanel;
+
 public class Contenedor extends javax.swing.JFrame {
 
+      private Principal principal;
+      private Login login;
     /**
      * Creates new form Contenedor
      */
     public Contenedor() {
-        initComponents();
+        setDefaultCloseOperation(EXIT_ON_CLOSE);// bootn cerrar
+        setName("TIM");
+        setTitle("TIM");
+        setResizable(false);
+        pack(); //trar todos los subcomponentes
+        setIconImage(getIconImage());
+        setLocationRelativeTo(null);//mirat
+        login(); 
     }
 
     /**
@@ -78,6 +87,24 @@ public class Contenedor extends javax.swing.JFrame {
         });
     }
 
+    
+    public void login(){
+        login = new Login(this);
+        login.setVisible(true);
+        add(login);
+        pack();
+        setLocationRelativeTo(null);
+    }
+    
+    public void irAPrincipal (JPanel jPanel) {
+        
+        remove(jPanel);
+        principal = new Principal(this);
+        principal.setVisible(true);
+        add(principal);
+        pack();
+        setLocationRelativeTo(null);  
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
 }
