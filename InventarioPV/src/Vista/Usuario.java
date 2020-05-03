@@ -4,12 +4,12 @@
  * and open the template in the editor.
  */
 package Vista;
-
+import Vista.Usuario;
 /**
  *
  * @author Marlon
  */
-public class Principal extends javax.swing.JPanel {
+public class Usuario extends javax.swing.JPanel {
     private Contenedor contenedor;
 
     /**
@@ -17,7 +17,7 @@ public class Principal extends javax.swing.JPanel {
      */
     
 
-    Principal(Contenedor contenedor) {
+    Usuario(Contenedor contenedor) {
         this.contenedor=contenedor;
          initComponents();
     }
