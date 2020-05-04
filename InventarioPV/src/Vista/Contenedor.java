@@ -14,6 +14,7 @@ public class Contenedor extends javax.swing.JFrame {
       private Principal principal;
       private Login login;
       private Usuario usuario;
+      private CrearUsuario crearusuario;
     /**
      * Creates new form Contenedor
      */
@@ -112,6 +113,25 @@ public class Contenedor extends javax.swing.JFrame {
         usuario = new Usuario(this);
         usuario.setVisible(true);
         add(usuario);
+        pack();
+        setLocationRelativeTo(null);
+        
+    }
+    
+    public void irALogin (JPanel jPanel){
+        remove(jPanel);
+        login = new Login(this);
+        login.setVisible(true);
+        add(login);
+        pack();
+        setLocationRelativeTo(null);
+    }
+    
+    public void irACrearUsuario(JPanel jPanel){
+        remove(jPanel);
+        crearusuario = new CrearUsuario(this);
+        crearusuario.setVisible(true);
+        add(crearusuario);
         pack();
         setLocationRelativeTo(null);
         

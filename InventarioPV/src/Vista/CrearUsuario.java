@@ -9,7 +9,7 @@ package Vista;
  *
  * @author Marlon
  */
-public class Principal extends javax.swing.JPanel {
+public class CrearUsuario extends javax.swing.JPanel {
     private Contenedor contenedor;
 
     /**
@@ -17,7 +17,7 @@ public class Principal extends javax.swing.JPanel {
      */
     
 
-    Principal(Contenedor contenedor) {
+    CrearUsuario(Contenedor contenedor) {
         this.contenedor=contenedor;
          initComponents();
     }

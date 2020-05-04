@@ -36,6 +36,7 @@ public class Principal extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        cerrar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -60,6 +61,17 @@ public class Principal extends javax.swing.JPanel {
         jLabel4.setText("Usuario");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, -1, -1));
 
+        cerrar.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        cerrar.setForeground(new java.awt.Color(153, 0, 51));
+        cerrar.setText("SALIR");
+        cerrar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        cerrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cerrarActionPerformed(evt);
+            }
+        });
+        add(cerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 540, 130, 40));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/fondoPrincipal01.jpg"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
@@ -68,8 +80,13 @@ public class Principal extends javax.swing.JPanel {
        usuariosPrincipal();
     }//GEN-LAST:event_jLabel2MouseClicked
 
+    private void cerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrarActionPerformed
+      salir();
+    }//GEN-LAST:event_cerrarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton cerrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -82,6 +99,8 @@ public class Principal extends javax.swing.JPanel {
        
     }
 
-
+private void salir (){
+    contenedor.irALogin(this);
+}
 
 }
