@@ -27,9 +27,7 @@ public class Usuario {
   
     
   
- public Usuario(){
-     
- }   
+
     
  public Usuario( String Nombre, String Correo, String Cedula, String Cargo, String Telefono, String Usuario, String Contrasenna){
      
@@ -45,7 +43,9 @@ public class Usuario {
      
     
 }   
-
+    public Usuario(){
+    
+}
     public String getNombre() {
         return Nombre;
     }

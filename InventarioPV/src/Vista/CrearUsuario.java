@@ -5,19 +5,15 @@
  */
 package Vista;
 
-/**
- *
- * @author Marlon
- */
+import Controlador.LogicaUsuario;
+import Modelo.Usuario;
+
 public class CrearUsuario extends javax.swing.JPanel {
     private Contenedor contenedor;
-
-    /**
-     * Creates new form Principal
-     */
+    LogicaUsuario usuariocrear = new LogicaUsuario();
     
 
-    CrearUsuario(Contenedor contenedor) {
+    public CrearUsuario(Contenedor contenedor) {
         this.contenedor=contenedor;
          initComponents();
     }
@@ -33,10 +29,22 @@ public class CrearUsuario extends javax.swing.JPanel {
 
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
+        nombreText = new javax.swing.JTextField();
+        correoText = new javax.swing.JTextField();
+        cedulaText = new javax.swing.JTextField();
+        CargoOpcionText = new javax.swing.JComboBox<>();
+        telefonoText = new javax.swing.JTextField();
+        UsuarioText = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        ContrasennaText = new javax.swing.JPasswordField();
+        cerrar = new javax.swing.JButton();
+        botonCrearUsuario = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -49,30 +57,131 @@ public class CrearUsuario extends javax.swing.JPanel {
         jLabel5.setText("TECHNICAL INVENTORY MANAGER");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
 
-        jTextField1.setText("jTextField1");
-        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, -1, -1));
+        nombreText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nombreTextActionPerformed(evt);
+            }
+        });
+        add(nombreText, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 420, 30));
+        add(correoText, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 420, 30));
+        add(cedulaText, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 180, 420, 30));
 
-        jTextField2.setText("jTextField2");
-        add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, -1));
+        CargoOpcionText.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opcion", "Administrador", "Tecnico" }));
+        CargoOpcionText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CargoOpcionTextActionPerformed(evt);
+            }
+        });
+        add(CargoOpcionText, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 420, 30));
+        add(telefonoText, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 420, 30));
+        add(UsuarioText, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 280, 30));
 
-        jTextField3.setText("jTextField3");
-        add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 200, -1, -1));
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel2.setText("Usuario");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 370, -1, -1));
 
-        jTextField4.setText("jTextField4");
-        add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, -1, -1));
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel6.setText("Nombres y Apellidos");
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel7.setText("Telefono");
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 270, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel8.setText("Cargo");
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, -1, -1));
+
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel9.setText("Cedula");
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, -1, -1));
+
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel10.setText("Correo Electronico");
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
+
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        jLabel11.setText("Contraseña");
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 410, -1, -1));
+        add(ContrasennaText, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 280, 30));
+
+        cerrar.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        cerrar.setForeground(new java.awt.Color(153, 0, 51));
+        cerrar.setText("ATRAS");
+        cerrar.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        cerrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cerrarActionPerformed(evt);
+            }
+        });
+        add(cerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 540, 130, 40));
+
+        botonCrearUsuario.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        botonCrearUsuario.setText("Crear Usuario");
+        botonCrearUsuario.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        botonCrearUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonCrearUsuarioActionPerformed(evt);
+            }
+        });
+        add(botonCrearUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(251, 450, 360, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/fondoPrincipal01.jpg"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
+    private void nombreTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nombreTextActionPerformed
+
+    private void cerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrarActionPerformed
+        atrasAprincipal();
+    }//GEN-LAST:event_cerrarActionPerformed
+
+    private void botonCrearUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCrearUsuarioActionPerformed
+        // TODO add your handling code here:
+        String nombre = nombreText.getText();
+        String correo = correoText.getText();
+        String cedula = cedulaText.getText();
+        String cargo = (String) CargoOpcionText.getSelectedItem();
+        String telefono = telefonoText.getText();
+        String usuario = UsuarioText.getText();
+        String contrasenna = ContrasennaText.getText();
+        
+        System.out.println(cargo);
+        
+        usuariocrear.creaUsuario(nombre, correo, cedula, cargo, telefono, usuario, contrasenna);
+    }//GEN-LAST:event_botonCrearUsuarioActionPerformed
+
+    private void CargoOpcionTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CargoOpcionTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CargoOpcionTextActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> CargoOpcionText;
+    private javax.swing.JPasswordField ContrasennaText;
+    private javax.swing.JTextField UsuarioText;
+    private javax.swing.JButton botonCrearUsuario;
+    private javax.swing.JTextField cedulaText;
+    private javax.swing.JButton cerrar;
+    private javax.swing.JTextField correoText;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField nombreText;
+    private javax.swing.JTextField telefonoText;
     // End of variables declaration//GEN-END:variables
+
+  private void  atrasAprincipal (){
+      contenedor.irAUsuario(this);
+  }
+
 }

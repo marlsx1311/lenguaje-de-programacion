@@ -54,4 +54,46 @@ public class LogicaUsuario {
         }
         return null;
     }
+    
+    public Usuario creaUsuario(String nombre, String correo, String cedula, String cargo, String telefono, String usuario2, String contrasenna){
+    try{
+            katsu= Conexion.getConnection();
+            sentencias = katsu.prepareStatement("INSERT INTO `Usuarios` (Nombre, Correo, Cedula, Cargo, Telefono, Usuario, Contrasenna )values (?,?,?,?,?,?,?)");
+            sentencias.setString(1, nombre);
+            sentencias.setString(2, correo);
+            sentencias.setString(3, cedula);
+            sentencias.setString(4, cargo);
+            sentencias.setString(5, telefono);
+            sentencias.setString(6, usuario2);
+            sentencias.setString(7, contrasenna);
+            sentencias.executeUpdate(); // ejecuto en la base de datos
+            
+            if ( rs != null){
+                while(rs.next()){
+                    usuario = new Usuario();
+                    usuario.setNombre (rs.getString(0));
+                    usuario.setCorreo(rs.getString(1));
+                    usuario.setCedula(rs.getString(2));
+                    usuario.setCargo(rs.getString(3));
+                    usuario.setTelefono(rs.getString(4));
+                    usuario.setUsuario(rs.getString(5));
+                    usuario.setContrasenna(rs.getString(6));
+                    
+                    
+                    ListaUsuarios.add(usuario); // en mi lista queda cargada toda la informacion
+                    
+                }
+            }
+            
+            
+               return usuario;     
+                    
+            }catch (Exception e){
+            System.out.println("error en la consulta de la base de datos: "+ e.getMessage());
+        }
+        return null;
+    
 }
+}
+
+

@@ -15,6 +15,8 @@ public class Contenedor extends javax.swing.JFrame {
       private Login login;
       private Usuario usuario;
       private CrearUsuario crearusuario;
+      private Inventario inventario;
+      private Ingreso ingreso;
     /**
      * Creates new form Contenedor
      */
@@ -135,6 +137,24 @@ public class Contenedor extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
         
+    }
+    
+    public void irAInventario(JPanel jPanel){
+        remove(jPanel);
+        inventario = new Inventario(this);
+        inventario.setVisible(true);
+        add(inventario);
+        pack();
+        setLocationRelativeTo(null);
+    }
+    
+    public void irAIngreso(JPanel jPanel){
+        remove(jPanel);
+        ingreso = new Ingreso(this);
+        ingreso.setVisible(true);
+        add(ingreso);
+        pack();
+        setLocationRelativeTo(null);
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
