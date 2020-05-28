@@ -10,7 +10,7 @@ import Vista.Usuario;
  *
  * @author Marlon
  */
-public class Usuario extends javax.swing.JPanel {
+public class Inventario extends javax.swing.JPanel {
     private Contenedor contenedor;
 
     /**
@@ -18,7 +18,7 @@ public class Usuario extends javax.swing.JPanel {
      */
     
 
-    Usuario(Contenedor contenedor) {
+    Inventario(Contenedor contenedor) {
         this.contenedor=contenedor;
          initComponents();
     }
@@ -33,12 +33,10 @@ public class Usuario extends javax.swing.JPanel {
     private void initComponents() {
 
         cerrar = new javax.swing.JButton();
-        jLabel7 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -54,10 +52,6 @@ public class Usuario extends javax.swing.JPanel {
         });
         add(cerrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 540, 130, 40));
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel7.setText("Modificar Usuario");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 330, -1, -1));
-
         jLabel3.setFont(new java.awt.Font("Impact", 1, 36)); // NOI18N
         jLabel3.setText("TIM");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, -1));
@@ -66,7 +60,7 @@ public class Usuario extends javax.swing.JPanel {
         jLabel5.setText("TECHNICAL INVENTORY MANAGER");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/IconoAgregar Usuario.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/inventario icono (1).png"))); // NOI18N
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel2MouseClicked(evt);
@@ -75,18 +69,15 @@ public class Usuario extends javax.swing.JPanel {
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel4.setText("Agregar Usuario");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, -1, -1));
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ModificarUsuario Icono.png"))); // NOI18N
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 190, -1, -1));
+        jLabel4.setText("Ingreso");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 330, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/fondoPrincipal01.jpg"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
-      crearUsuario();        // TODO add your handling code here:
+      ingreso();        // TODO add your handling code here:
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void cerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrarActionPerformed
@@ -101,17 +92,15 @@ public class Usuario extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     // End of variables declaration//GEN-END:variables
 
-private void crearUsuario(){
-    contenedor.irACrearUsuario(this);
+private void ingreso(){
+    contenedor.irAIngreso(this);
 }
-
 private void regresarPrincipal(){
     contenedor.irAPrincipal(this);
 }
+
 
 }
 

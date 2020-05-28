@@ -56,7 +56,7 @@ public class Usuario extends javax.swing.JPanel {
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel7.setText("Modificar Usuario");
-        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 330, -1, -1));
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 330, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Impact", 1, 36)); // NOI18N
         jLabel3.setText("TIM");
