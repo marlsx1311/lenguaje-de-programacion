@@ -27,26 +27,23 @@ public class ModificarUsuario extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jTextField5 = new javax.swing.JTextField();
+        jTextField6 = new javax.swing.JTextField();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
-        jLabel5.setText("TECHNICAL INVENTORY MANAGER");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
-
-        jLabel3.setFont(new java.awt.Font("Impact", 1, 36)); // NOI18N
-        jLabel3.setText("TIM");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, -1));
-
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
-        jLabel2.setText("Lista de usuarios");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -60,17 +57,65 @@ public class ModificarUsuario extends javax.swing.JPanel {
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 770, 180));
 
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 11)); // NOI18N
+        jLabel5.setText("TECHNICAL INVENTORY MANAGER");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Impact", 1, 36)); // NOI18N
+        jLabel3.setText("TIM");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
+        jLabel2.setText("Lista de usuarios");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, -1, -1));
+
+        jTextField1.setText("jTextField1");
+        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 410, 160, -1));
+
+        jTextField2.setText("jTextField2");
+        add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 160, -1));
+
+        jTextField3.setText("jTextField3");
+        add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, 160, -1));
+
+        jTextField4.setText("jTextField4");
+        add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 160, -1));
+
+        jTextField5.setText("jTextField5");
+        add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 530, 160, -1));
+
+        jTextField6.setText("jTextField6");
+        add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 470, 160, -1));
+
+        jPasswordField1.setText("jPasswordField1");
+        add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 500, 160, -1));
+
+        jButton1.setText("jButton1");
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 510, -1, -1));
+
+        jButton2.setText("jButton2");
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 530, -1, -1));
+
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/fondoPrincipal01.jpg"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
     // End of variables declaration//GEN-END:variables
 }
