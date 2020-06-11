@@ -7,6 +7,7 @@ package Vista;
 
 import Controlador.LogicaUsuario;
 import Modelo.Usuario;
+import javax.swing.JOptionPane;
 
 public class CrearUsuario extends javax.swing.JPanel {
     private Contenedor contenedor;
@@ -151,6 +152,7 @@ public class CrearUsuario extends javax.swing.JPanel {
         System.out.println(cargo);
         
         usuariocrear.creaUsuario(nombre, correo, cedula, cargo, telefono, usuario, contrasenna);
+        mensaje();
     }//GEN-LAST:event_botonCrearUsuarioActionPerformed
 
     private void CargoOpcionTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CargoOpcionTextActionPerformed
@@ -184,4 +186,8 @@ public class CrearUsuario extends javax.swing.JPanel {
       contenedor.irAUsuario(this);
   }
 
+  private void mensaje(){
+      JOptionPane.showMessageDialog(null, "Producto ingresado");
+      
+  }
 }

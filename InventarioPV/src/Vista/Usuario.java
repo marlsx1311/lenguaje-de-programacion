@@ -79,6 +79,11 @@ public class Usuario extends javax.swing.JPanel {
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 330, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/ModificarUsuario Icono.png"))); // NOI18N
+        jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel6MouseClicked(evt);
+            }
+        });
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 190, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/fondoPrincipal01.jpg"))); // NOI18N
@@ -92,6 +97,10 @@ public class Usuario extends javax.swing.JPanel {
     private void cerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cerrarActionPerformed
         regresarPrincipal();
     }//GEN-LAST:event_cerrarActionPerformed
+
+    private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
+      modificarUsuario();
+    }//GEN-LAST:event_jLabel6MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -111,6 +120,10 @@ private void crearUsuario(){
 
 private void regresarPrincipal(){
     contenedor.irAPrincipal(this);
+}
+
+private void modificarUsuario(){
+    contenedor.irAModificarUsuario(this);
 }
 
 }
