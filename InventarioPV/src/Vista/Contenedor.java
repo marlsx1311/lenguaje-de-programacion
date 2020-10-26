@@ -15,7 +15,7 @@ public class Contenedor extends javax.swing.JFrame {
       private Login login;
       private Usuario usuario;
       private CrearUsuario crearusuario;
-      private Inventario inventario;
+      private Cliente inventario;
       private Ingreso ingreso;
       private ModificarUsuario modificarusuario;
     /**
@@ -142,7 +142,7 @@ public class Contenedor extends javax.swing.JFrame {
     
     public void irAInventario(JPanel jPanel){
         remove(jPanel);
-        inventario = new Inventario(this);
+        inventario = new Cliente(this);
         inventario.setVisible(true);
         add(inventario);
         pack();

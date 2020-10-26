@@ -10,7 +10,7 @@ import Vista.Usuario;
  *
  * @author Marlon
  */
-public class Inventario extends javax.swing.JPanel {
+public class Cliente extends javax.swing.JPanel {
     private Contenedor contenedor;
 
     /**
@@ -18,7 +18,7 @@ public class Inventario extends javax.swing.JPanel {
      */
     
 
-    Inventario(Contenedor contenedor) {
+    Cliente(Contenedor contenedor) {
         this.contenedor=contenedor;
          initComponents();
     }
